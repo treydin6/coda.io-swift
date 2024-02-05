@@ -4,7 +4,7 @@
 public final class CodaApi {
     
     
-    init(apiKey: String) {
+    public init(apiKey: String) {
         print("Init Processing: \(apiKey)")
     }
 }
