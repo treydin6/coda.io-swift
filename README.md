@@ -1,8 +1,1 @@
-//
-//  File.swift
-//  Coda
-//
-//  Created by Treydin Winward on 2/4/24.
-//
-
-import Foundation
+## Swift Package for Seamless Integration with [Coda](https://coda.io/developers/apis/v1) API
