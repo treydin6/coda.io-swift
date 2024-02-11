@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct ListAvailableDocsParams {
+public struct ListAvailableDocsParams {
     /// Show only documents owned by the user.
     var isOwner: Bool?
     

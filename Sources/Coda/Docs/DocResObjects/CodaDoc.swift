@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct CodaDoc: Codable {
+public struct CodaDoc: Codable {
     let items: [Doc]
     let href: String
     let nextPageToken: String?

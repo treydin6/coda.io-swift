@@ -13,7 +13,7 @@ import Foundation
 /// Each case corresponds to a specific type of API request and may accept parameters
 /// as described below:
 ///
-enum Endpoint: Equatable {
+public enum Endpoint: Equatable {
     case listAvailableDocs(queryItems: [URLQueryItem], apiKey: String)
 }
 

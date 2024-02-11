@@ -7,7 +7,7 @@
 
 import Foundation
 
-final class NetworkManager {
+public final class NetworkManager {
     
     func request<T: Codable>(session: URLSession = .shared,
                              _ endPoint: Endpoint,
