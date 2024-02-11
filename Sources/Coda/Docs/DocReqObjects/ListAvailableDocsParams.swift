@@ -39,8 +39,8 @@ public struct ListAvailableDocsParams {
     var pageToken: String?
     
     /// Initializes a new instance of `ListAvailableDocsParameters`.
-    init() {}
-    init(isOwner: Bool? = nil,
+    public init() {}
+    public init(isOwner: Bool? = nil,
              isPublished: Bool? = nil,
              queryString: String? = nil,
              sourceDoc: String? = nil,
