@@ -111,7 +111,7 @@ extension Endpoint {
         }
 
         urlComponents.queryItems = requestQueryItems
-
+        print(urlComponents.url ?? "error constructing url")
         return urlComponents.url
     }
 }
