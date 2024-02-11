@@ -8,7 +8,7 @@
 import Foundation
 
 /// all Functionality regarding /docs
-extension CodaApi {
+public extension CodaApi {
     
     /// Retrieves a list of available documents based on specified criteria from the Coda API.
     ///
