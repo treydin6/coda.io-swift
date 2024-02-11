@@ -33,9 +33,19 @@ extension CodaApi {
     /// ```
     ///
     /// - Important: Ensure you have a valid API key set before making this request.
-    func listAvailableDocs(queryParams: ListAvailableDocsParams) -> CodaDoc? {
+    func listAvailableDocs(queryParams: ListAvailableDocsParams) async -> CodaDoc? {
         
         let params: [URLQueryItem] = queryParams.queryItems()
+        
+        do {
+            let endpoint = Endpoint.listAvailableDocs(queryItems: params, apiKey: self.getApiKey())
+            let res = try await networkManager.request(endpoint, type: CodaDoc.self)
+            return res
+        } catch let error as NetworkManager.NetworkingError{
+            print("Err: \(error.localizedDescription)")
+        } catch {
+            print("Catch all")
+        }
         
         // todo: create etwork Request
         return nil
