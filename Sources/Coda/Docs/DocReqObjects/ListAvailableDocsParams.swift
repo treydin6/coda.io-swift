@@ -40,6 +40,27 @@ struct ListAvailableDocsParams {
     
     /// Initializes a new instance of `ListAvailableDocsParameters`.
     init() {}
+    init(isOwner: Bool? = nil,
+             isPublished: Bool? = nil,
+             queryString: String? = nil,
+             sourceDoc: String? = nil,
+             isStarred: Bool? = nil,
+             inGallery: Bool? = nil,
+             workspaceId: String? = nil,
+             folderId: String? = nil,
+             limit: Int? = 25,
+             pageToken: String? = nil) {
+            self.isOwner = isOwner
+            self.isPublished = isPublished
+            self.queryString = queryString
+            self.sourceDoc = sourceDoc
+            self.isStarred = isStarred
+            self.inGallery = inGallery
+            self.workspaceId = workspaceId
+            self.folderId = folderId
+            self.limit = limit
+            self.pageToken = pageToken
+        }
     
     /// Constructs an array of URLQueryItem from the struct properties.
     func queryItems() -> [URLQueryItem] {
